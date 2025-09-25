@@ -10,7 +10,7 @@
     </header>
     <main>
         <h2>Formulario de contacto</h2>
-        <form action="resp_contacto.html" method="post"> <!--Usamos post para no mostrar los datos en la URL y mantener la privacidad-->
+        <form action="resp_contacto.html" method="get"> <!--Debería ser post para no mostrar los datos en la URL y mantener la privacidad, pero debido a que github pages no lo soporta ya que es un servicio estático se debe usar get-->
             <p>Los campos marcados como (obligatorio) deben completarse.</p>
             <label for="asunto">Asunto (obligatorio):</label>
             <input type="text" id="asunto" name="asunto" autofocus required placeholder="Escriba el asunto aquí"><br>
