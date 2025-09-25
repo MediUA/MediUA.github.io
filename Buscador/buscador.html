@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Buscador de términos médicos - MediUA</title>
+</head>
+<body>
+    <header>
+        <h1><a href="../index.html">MediUA</a></h1>
+    </header>
+    <main>
+        <h2>Buscador de términos médicos</h2>
+    <form action="resp_buscador.html" method="get"> <!--Usamos get para que los términos buscados aparezcan en la URL y se puedan compartir-->
+        <p>Rellene los campos que considere necesarios para buscar el término.<br>
+        Los campos marcados como (obligatorio) deben completarse.<br>
+        Puede seleccionar múltiples síntomas o pruebas manteniendo presionada la tecla Ctrl (Windows y Linux) o Cmd (Mac).<br>
+        Cada campo de búsqueda dispone de un conector lógico Y / O: Use Y para exigir que se cumplan todas las condiciones al mismo tiempo, o O para aceptar cualquiera de ellas.
+    </p>
+        <label for="descripcion">Descripción (obligatorio):</label>
+        <input type="text" id="descripcion" name="descripcion" autofocus required placeholder="Describa aquí el término">
+        <label for="logico_descripcion">Conector lógico para descripción:</label>
+        <select id="logico_descripcion" name="logico_descripcion">
+            <option value="and">Y</option>
+            <option value="or">O</option>
+        </select><br>
+        <label for="causas">Causas:</label>
+        <input type="text" id="causas" name="causas" placeholder="Escriba aquí las causas">
+        <label for="logico_causas">Conector lógico para causas:</label>
+        <select id="logico_causas" name="logico_causas">
+            <option value="and">Y</option>
+            <option value="or">O</option>
+        </select><br>
+        <label for="sintomas">Síntomas:</label>
+        <select id="sintomas" name="sintomas[]" multiple>
+            <option value="cefalea">Cefalea</option>
+            <option value="diarrea">Diarrea</option>
+            <option value="dolor_muscular">Dolor muscular</option>
+            <option value="fiebre">Fiebre</option>
+            <option value="tos">Tos</option>
+            <option value="vomito">Vómito</option>
+            <option value="otros">Otros</option>
+        </select>
+        <label for="logico_sintomas">Conector lógico para síntomas:</label>
+        <select id="logico_sintomas" name="logico_sintomas">
+            <option value="and">Y</option>
+            <option value="or">O</option>
+        </select><br>
+        <label for="pruebas">Pruebas y exámenes:</label>
+        <select id="pruebas" name="pruebas[]" multiple>
+            <option value="analisis_sangre">Análisis de sangre</option>
+            <option value="ecografia">Ecografía</option>
+            <option value="radiografia">Radiografía</option>
+            <option value="tomografia">Tomografía</option>
+            <option value="ultrasonido">Ultrasonido</option>
+            <option value="otros">Otros</option>
+        </select>
+        <label for="logico_pruebas">Conector lógico para pruebas y exámenes:</label>
+        <select id="logico_pruebas" name="logico_pruebas">
+            <option value="and">Y</option>
+            <option value="or">O</option>
+        </select><br>
+        <label for="tratamiento">Tratamiento:</label>
+        <input type="text" id="tratamiento" name="tratamiento" placeholder="Escriba aquí el tratamiento">
+        <label for="logico_tratamiento">Conector lógico para tratamiento:</label>
+        <select id="logico_tratamiento" name="logico_tratamiento">
+            <option value="and">Y</option>
+            <option value="or">O</option>
+        </select><br>
+        <fieldset>
+            <legend>Pronóstico:</legend>
+            <input type="radio" id="positivo" name="expectativas" value="positivo">
+            <label for="positivo">Positivo</label>
+            <input type="radio" id="negativo" name="expectativas" value="negativo">
+            <label for="negativo">Negativo</label>
+            <input type="radio" id="sin_definir" name="expectativas" value="sin_definir">
+            <label for="sin_definir">Sin definir</label>
+        </fieldset>
+        <label for="logico_expectativas">Conector lógico para pronóstico:</label>
+        <select id="logico_expectativas" name="logico_expectativas">
+            <option value="and">Y</option>
+            <option value="or">O</option>
+        </select><br>
+        <button type="submit">Buscar término médico</button>
+    </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 MediUA. Todos los derechos reservados.</p>
+        <address>
+            Escrito por: Pablo Sánchez Sos y Eva Soto Peral<br>
+            Correo: pss78@alu.ua.es y esp96@alu.ua.es<br>
+            Dirección: Carr. de San Vicente del Raspeig
+        </address>
+        <a href="../index.html">Volver a la página principal</a>
+    </footer>
+</body>
+</html>

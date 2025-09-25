@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Página de contacto - MediUA</title>
+</head>
+<body>
+    <header>
+        <h1><a href="../index.html">MediUA</a></h1>
+    </header>
+    <main>
+        <h2>Formulario de contacto</h2>
+        <form action="resp_contacto.html" method="post"> <!--Usamos post para no mostrar los datos en la URL y mantener la privacidad-->
+            <p>Los campos marcados como (obligatorio) deben completarse.</p>
+            <label for="asunto">Asunto (obligatorio):</label>
+            <input type="text" id="asunto" name="asunto" autofocus required placeholder="Escriba el asunto aquí"><br>
+            <label for="mensaje">Comentario o pregunta (obligatorio):</label>
+            <textarea id="mensaje" name="mensaje" required placeholder="Escriba el comentario o el mensaje aquí"></textarea><br>
+            <label for="persona">Yo soy:</label>
+            <select name="persona" id="persona">
+                <option value="paciente">Paciente</option>
+                <option value="cientifico">Científico</option>
+                <option value="medico">Médico</option>
+                <option value="educador">Educador</option>
+                <option value="fabricante">Fabricante</option>
+                <option value="periodista">Periodista</option>
+            </select><br>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha"><br>
+            <fieldset>
+                <legend>Sexo:</legend>
+                <input type="radio" id="hombre" name="sexo" value="hombre">
+                <label for="hombre">Hombre</label><br>
+                <input type="radio" id="mujer" name="sexo" value="mujer">
+                <label for="mujer">Mujer</label><br>
+                <input type="radio" id="otro" name="sexo" value="otro">
+                <label for="otro">Otro</label><br>
+            </fieldset>
+            <label for="email">Correo electrónico (Ejemplo: pss78@gmail.com):</label>
+            <input type="email" id="email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="pss78@gmail.com"><br>
+            <label for="mas_informacion">Marca la casilla para más información</label>
+            <input type="checkbox" id="mas_informacion" name="mas_informacion" value="si"><br>
+            <button type="submit">Enviar formulario de contacto</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 MediUA. Todos los derechos reservados.</p>
+        <address>
+            Escrito por: Pablo Sánchez Sos y Eva Soto Peral<br>
+            Correo: pss78@alu.ua.es y esp96@alu.ua.es<br>
+            Dirección: Carr. de San Vicente del Raspeig
+        </address>
+        <a href="../index.html">Volver a la página principal</a>
+    </footer>
+</body>
+</html>
