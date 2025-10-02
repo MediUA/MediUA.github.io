@@ -10,12 +10,17 @@
     </header>
     <main>
         <h2>Formulario de contacto</h2>
-        <form action="resp_contacto.html" method="get"> <!--Debería ser post para no mostrar los datos en la URL y mantener la privacidad, pero debido a que github pages no lo soporta ya que es un servicio estático se debe usar get-->
+        <form action="resp_contacto.html" method="get">
             <p>Los campos marcados como (obligatorio) deben completarse.</p>
+            <p>
             <label for="asunto">Asunto (obligatorio):</label>
-            <input type="text" id="asunto" name="asunto" autofocus required placeholder="Escriba el asunto aquí"><br>
+            <input type="text" id="asunto" name="asunto" autofocus required placeholder="Escriba el asunto aquí">
+            </p>
+            <p>
             <label for="mensaje">Comentario o pregunta (obligatorio):</label>
-            <textarea id="mensaje" name="mensaje" required placeholder="Escriba el comentario o el mensaje aquí"></textarea><br>
+            <textarea id="mensaje" name="mensaje" required placeholder="Escriba el comentario o el mensaje aquí"></textarea>
+            </p>
+            <p>
             <label for="persona">Yo soy:</label>
             <select name="persona" id="persona">
                 <option value="paciente">Paciente</option>
@@ -24,23 +29,38 @@
                 <option value="educador">Educador</option>
                 <option value="fabricante">Fabricante</option>
                 <option value="periodista">Periodista</option>
-            </select><br>
+            </select>
+            </p>
+            <p>
             <label for="fecha">Fecha:</label>
-            <input type="date" id="fecha" name="fecha"><br>
+            <input type="date" id="fecha" name="fecha">
+            </p>
             <fieldset>
-                <legend>Sexo:</legend>
+            <legend>Sexo:</legend>
+            <p>
                 <input type="radio" id="hombre" name="sexo" value="hombre">
-                <label for="hombre">Hombre</label><br>
+                <label for="hombre">Hombre</label>
+            </p>
+            <p>
                 <input type="radio" id="mujer" name="sexo" value="mujer">
-                <label for="mujer">Mujer</label><br>
+                <label for="mujer">Mujer</label>
+            </p>
+            <p>
                 <input type="radio" id="otro" name="sexo" value="otro">
-                <label for="otro">Otro</label><br>
+                <label for="otro">Otro</label>
+            </p>
             </fieldset>
+            <p>
             <label for="email">Correo electrónico (Ejemplo: pss78@gmail.com):</label>
-            <input type="email" id="email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="pss78@gmail.com"><br>
+            <input type="email" id="email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="pss78@gmail.com">
+            </p>
+            <p>
             <label for="mas_informacion">Marca la casilla para más información</label>
-            <input type="checkbox" id="mas_informacion" name="mas_informacion" value="si"><br>
+            <input type="checkbox" id="mas_informacion" name="mas_informacion" value="si">
+            </p>
+            <p>
             <button type="submit">Enviar formulario de contacto</button>
+            </p>
         </form>
     </main>
     <footer>
