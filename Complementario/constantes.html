@@ -8,11 +8,22 @@
         border: 1px solid black;
         }
     </style>
+    <link rel="stylesheet" href="../CSS/migas.css">
 </head>
+
 <body>
     <header>
         <h1><a href="../index.html">MediUA</a></h1>
     </header>
+    <div class="breadcrumb-container">
+        <span class="breadcrumb-label">Estás en:</span> <!--Etiqueta para lectores de pantalla y para que esté todo en una misma línea-->
+        <nav aria-label="migas de pan">
+            <ol class="breadcrumbs">
+                <li class="breadcrumb-item"><a href="../index.html">Enciclopedia médica</a></li>
+                <li class="breadcrumb-item">Constantes vitales</li>
+            </ol>
+        </nav>
+    </div>
     <main>
         <h2>Constantes vitales</h2>
         <p>Las constantes vitales son indicadores fisiológicos que reflejan el estado de salud de una persona. Estas incluyen la presión arterial, la frecuencia cardiaca, el índice glucémico, el nivel de oxígeno en sangre y la temperatura corporal. Los rangos normales pueden variar según la edad, el sexo y otros factores individuales. Es importante monitorear estas constantes regularmente para detectar posibles problemas de salud a tiempo.</p>
@@ -21,11 +32,10 @@
                 <caption>Constantes vitales y sus rangos de referencia</caption>
                 <thead>
                     <tr>
-                        <th scope="col"></th>
+                        <th id="rangos" scope="col" rowspan="2">Rangos</th>
                         <th colspan="5" scope="colgroup">Constantes vitales</th>
                     </tr>
                     <tr>
-                        <th id="rangos" scope="col">Rangos</th>
                         <th id="pa" scope="col">Presión arterial</th>
                         <th id="fc" scope="col">Frecuencia cardiaca</th>
                         <th id="ig" scope="col">Índice glucémico</th>
