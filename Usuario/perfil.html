@@ -22,7 +22,7 @@
         <h2>Perfil de usuario</h2>
         <p>Complete los siguientes datos para crear su perfil de usuario.</p>
         <form action="resp_perfil.html" method="get"> <!--Debería ser post para no mostrar los datos en la URL y mantener la privacidad, pero debido a que github pages no lo soporta ya que es un servicio estático se debe usar get-->
-             <p>Los campos marcados como (obligatorio) deben completarse.</p>
+            <p>Los campos marcados como (obligatorio) deben completarse.</p>
             <label for="nombre">Nombre (obligatorio):</label>
             <input type="text" id="nombre" name="nombre" autofocus required placeholder="Escriba su nombre aquí"><br>
             <label for="apellidos">Apellidos (obligatorio):</label>
@@ -55,13 +55,18 @@
         </form>
     </main>
     <footer>
-      <p>&copy; 2025 MediUA. Todos los derechos reservados.</p>
-      <address>
-        Escrito por: Pablo Sánchez Sos y Eva Soto Peral<br>
-        Correos: pss78@alu.ua.es y esp96@alu.ua.es<br>
-        Dirección: Carr. de San Vicente del Raspeig
-      </address>
-      <a href="../index.html">Volver a la página principal</a>
+        <p>&copy; 2025 MediUA. Todos los derechos reservados.</p>
+        <address>
+            Escrito por: Pablo Sánchez Sos y Eva Soto Peral<br>
+            Correos: pss78@alu.ua.es y esp96@alu.ua.es<br>
+            Dirección: Carr. de San Vicente del Raspeig
+        </address>
+        <nav aria-label="Navegación de regreso a página principal y mapa del sitio web">
+            <ul>
+                <li><a href="../index.html">Volver a la página principal</a></li>
+                <li><a href="../Navegacion/mapa_web.html">Mapa del sitio web</a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>
