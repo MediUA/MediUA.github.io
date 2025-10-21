@@ -1,137 +1,41 @@
-/* Archivo principal que importa todos los módulos CSS */
-
-/* Importar Font Awesome desde CDN */
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+/* Archivo principal - MediUA */
 
 /* Importar módulos CSS */
-@import url("variables.css");
-@import url("base.css");
-@import url("componentes.css");
-@import url("forms.css");
-@import url("responsive.css");
+@import url("variables_simple.css");
+@import url("base_simple.css");
+@import url("componentes_simple.css");
+@import url("forms_simple.css");
+@import url("responsive_simple.css");
 
-/* Estilos adicionales específicos para migas de pan ya incluidos en components.css */
+/* Utilidades de texto */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
 
-/* Utilidades adicionales */
-.text-center {
-  text-align: center;
-}
+/* Utilidades de margen */
+.mt-0 { margin-top: 0; }
+.mt-1 { margin-top: var(--spacing-sm); }
+.mt-2 { margin-top: var(--spacing-md); }
+.mt-3 { margin-top: var(--spacing-lg); }
 
-.text-right {
-  text-align: right;
-}
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: var(--spacing-sm); }
+.mb-2 { margin-bottom: var(--spacing-md); }
+.mb-3 { margin-bottom: var(--spacing-lg); }
 
-.text-left {
-  text-align: left;
-}
+/* Utilidades de flexbox */
+.flex { display: flex; }
+.flex-column { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.align-center { align-items: center; }
+.gap-1 { gap: var(--spacing-sm); }
+.gap-2 { gap: var(--spacing-md); }
 
-.mt-0 {
-  margin-top: 0;
-}
-.mt-1 {
-  margin-top: var(--spacing-sm);
-}
-.mt-2 {
-  margin-top: var(--spacing-md);
-}
-.mt-3 {
-  margin-top: var(--spacing-lg);
-}
-.mt-4 {
-  margin-top: var(--spacing-xl);
-}
-
-.mb-0 {
-  margin-bottom: 0;
-}
-.mb-1 {
-  margin-bottom: var(--spacing-sm);
-}
-.mb-2 {
-  margin-bottom: var(--spacing-md);
-}
-.mb-3 {
-  margin-bottom: var(--spacing-lg);
-}
-.mb-4 {
-  margin-bottom: var(--spacing-xl);
-}
-
-.p-0 {
-  padding: 0;
-}
-.p-1 {
-  padding: var(--spacing-sm);
-}
-.p-2 {
-  padding: var(--spacing-md);
-}
-.p-3 {
-  padding: var(--spacing-lg);
-}
-.p-4 {
-  padding: var(--spacing-xl);
-}
-
-/* Contenedor flexible */
-.flex {
-  display: flex;
-}
-
-.flex-column {
-  flex-direction: column;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
-.align-center {
-  align-items: center;
-}
-
-.gap-1 {
-  gap: var(--spacing-sm);
-}
-.gap-2 {
-  gap: var(--spacing-md);
-}
-.gap-3 {
-  gap: var(--spacing-lg);
-}
-
-/* Grid */
-.grid {
-  display: grid;
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, 1fr);
-}
+/* Utilidades de grid */
+.grid { display: grid; }
+.grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
 
 /* Visibilidad */
-.hidden {
-  display: none;
-}
-
-.visible {
-  display: block;
-}
-
-/* Accesibilidad mejorada */
-:focus{
-  outline: var(--border-width-thick) solid var(--color-primary);
-  outline-offset: 2px;
-}
+.hidden { display: none; }
