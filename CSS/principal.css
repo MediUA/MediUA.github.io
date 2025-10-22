@@ -2,7 +2,6 @@
 
 /* Importar módulos CSS */
 @import url("variables.css");
-@import url("base.css");
 @import url("componentes.css");
 @import url("forms.css");
 @import url("responsive.css");
@@ -18,8 +17,8 @@ body {
     line-height: var(--line-height-base); /*Interlineado*/
     color: var(--color-text);
     background: var(--color-bg);
-    /*display: flex;
-    flex-direction: column;*/ /*NO VEO EN QUÉ AFECTA ESTO*/
+    display: flex;
+    flex-direction: column;
 }
 
 /* Tipografía */
