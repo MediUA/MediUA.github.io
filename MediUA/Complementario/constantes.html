@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Constantes vitales - MediUA</title>
+    <link rel="stylesheet" href="../CSS/principal.css">
+    <script src="https://kit.fontawesome.com/39dc941603.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="../index.html">MediUA</a></h1>
+    </header>
+    <div class="breadcrumb-container">
+        <span class="breadcrumb-label">Estás en:</span> <!--Etiqueta para lectores de pantalla y para que esté todo en una misma línea-->
+        <nav aria-label="migas de pan">
+            <ol class="breadcrumbs">
+                <li class="breadcrumb-item"><a href="../index.html">Enciclopedia médica</a></li>
+                <li class="breadcrumb-item">Constantes vitales</li>
+            </ol>
+        </nav>
+    </div>
+    <main>
+        <h2>Constantes vitales</h2>
+        <p>Las constantes vitales son indicadores fisiológicos que reflejan el estado de salud de una persona. Estas incluyen la presión arterial, la frecuencia cardiaca, el índice glucémico, el nivel de oxígeno en sangre y la temperatura corporal. Los rangos normales pueden variar según la edad, el sexo y otros factores individuales. Es importante monitorear estas constantes regularmente para detectar posibles problemas de salud a tiempo.</p>
+        <section>
+            <table>
+                <caption>Constantes vitales y sus rangos de referencia</caption>
+                <thead>
+                    <tr>
+                        <th id="rangos" scope="col" rowspan="2">Rangos</th>
+                        <th colspan="5" scope="colgroup">Constantes vitales</th>
+                    </tr>
+                    <tr>
+                        <th id="pa" scope="col">Presión arterial</th>
+                        <th id="fc" scope="col">Frecuencia cardiaca</th>
+                        <th id="ig" scope="col">Índice glucémico</th>
+                        <th id="o2" scope="col">Nivel de oxígeno</th>
+                        <th id="temp" scope="col">Temperatura</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th id="alto" scope="row">Alto</th>
+                        <td headers="alto pa">&gt; 140/90 <abbr title="milímetros de mercurio">mmHg</abbr></td> <!--Preguntar por qué los símbolos y las abreviaturas no son leídas por el lector de pantalla-->
+                        <td headers="alto fc">&gt; 100 <abbr title="latidos por minuto">lpm</abbr></td>
+                        <td headers="alto ig">&gt; 126 <abbr title="miligramos por decilitro">mg/dL</abbr></td>
+                        <td headers="alto o2">&gt; 95 <abbr title="por ciento">%</abbr></td>
+                        <td headers="alto temp">&gt; 37.5 <abbr title="grados Celsius">°C</abbr></td>
+                    </tr>
+                    <tr>
+                        <th id="normal" scope="row">Normal</th>
+                        <td headers="normal pa">120/80 <abbr title="milímetros de mercurio">mmHg</abbr></td>
+                        <td headers="normal fc">60&ndash;100 <abbr title="latidos por minuto">lpm</abbr></td>
+                        <td headers="normal ig">70&ndash;100 <abbr title="miligramos por decilitro">mg/dL</abbr></td>
+                        <td headers="normal o2">95&ndash;100 <abbr title="por ciento">%</abbr></td>
+                        <td headers="normal temp">36&ndash;37.5 <abbr title="grados Celsius">°C</abbr></td>
+                    </tr>
+                    <tr>
+                        <th id="bajo" scope="row">Bajo</th>
+                        <td headers="bajo pa">&lt; 90/60 <abbr title="milímetros de mercurio">mmHg</abbr></td>
+                        <td headers="bajo fc">&lt; 60 <abbr title="latidos por minuto">lpm</abbr></td>
+                        <td headers="bajo ig">&lt; 70 <abbr title="miligramos por decilitro">mg/dL</abbr></td>
+                        <td headers="bajo o2">&lt; 90 <abbr title="por ciento">%</abbr></td>
+                        <td headers="bajo temp">&lt; 36 <abbr title="grados Celsius">°C</abbr></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 MediUA. Todos los derechos reservados.</p>
+        <address>
+            <i class="fa-solid fa-pencil" aria-label="Lápiz" role="img"></i> Escrito por: Pablo Sánchez Sos y Eva Soto Peral<br>
+            <i class="fa-solid fa-envelope" aria-label="Correo" role="img"></i> Correo: pss78@alu.ua.es y esp96@alu.ua.es<br>
+            <i class="fa-solid fa-house" aria-label="Casa" role="img"></i> Dirección: Carr. de San Vicente del Raspeig
+        </address>
+        <nav aria-label="Navegación de regreso a página principal y mapa del sitio web">
+            <ul>
+                <li><a href="../index.html">Volver a la página principal</a></li>
+                <li><a href="../Navegacion/mapa_web.html">Mapa del sitio web</a></li>
+                <li><a href="../Declaracion/declaracion.html">Declaración de accesibilidad</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
+    
