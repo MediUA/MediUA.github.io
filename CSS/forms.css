@@ -4,19 +4,19 @@ form { /*Aspecto visual general*/
   background: var(--color-bg-alt);
   border: var(--border-width) solid var(--color-border);
 }
-/*form {
-  max-width: 800px;
+form {
   margin: var(--spacing-xl) 0;
 }
 form p {
-  margin-bottom: var(--spacing-md);
+  display: block;
 }
+
+
 label {
   font-weight: var(--font-weight-medium);
   display: block;
   margin-bottom: var(--spacing-xs);
 }
-Lo he puesto en el responsive*/
 
 /* Inputs */
 input[type="text"],
@@ -54,7 +54,8 @@ select:focus{
   outline-offset: 2px; /* separa el contorno del borde */
 }
 
-input:invalid {
+
+input:invalid, textarea:invalid{
   border-color: var(--color-error); /* Color de borde para campos inválidos */
 }
 
@@ -92,9 +93,18 @@ fieldset p {
   margin-bottom: var(--spacing-sm);
 }
 
+fieldset p {
+  grid-template-columns: 1fr;
+}
+
 fieldset label {
   margin-bottom: 0;
   cursor: pointer;
+}
+
+
+fieldset label, form label {
+  text-align: left;
 }
 
 /* Botones */
@@ -118,5 +128,5 @@ input[type="submit"] {
 button:hover,
 input[type="submit"]:hover {
   background: var(--color-primary-dark);
-  transform: translateY(-1px);
+  transform: translateY(-1px); /*Mueve ligeramente*/
 }

@@ -1,6 +1,10 @@
 /* 3 tramos: <=480px | 481px-1919px | >=1920px+ */
 
 /* Tramo 1: pantalla pequeña (menos de 480px) */
+* {
+  box-sizing: border-box; /* Asegura que padding y border se incluyan en el ancho total permitiendo que nada desborde, así en vez de tener 50px de tamaño+5 de padding +5 de marging tiene que apañarse con los 50px para meter todo*/
+  /*Por defecto es content-box. Ancho= width + padding + border*/
+}
 @media screen and (max-width: 480px) {
   :root {
     --font-size-h1: 2rem;
@@ -8,21 +12,26 @@
     --font-size-h3: 1.25rem;
   }
 
-  main {
+  header, main {
     padding: var(--spacing-md);
   }
 
   nav[aria-label="Índice alfabético"] ul { /* Columnas flexibles según ancho */
     grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));
   }
-
-  table {
-    display: block;
-    overflow-x: auto;
+  
+  form {
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+  
+  form p {
+    margin-bottom: var(--spacing-md);
   }
 }
 
+
 /*Tramo 2: pantalla mediana (481-1919 px)*/
+
 @media screen and (min-width: 481px) and (max-width: 1919px) {
   :root {
     --font-size-h1: 3rem;
@@ -39,31 +48,20 @@
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   }
 
+  form {
+    padding: var(--spacing-lg);
+  }
 
   form p {
-    /*display: grid;  Provoca que el párrafo de antes de los formularios esté colapsado*/ 
-    grid-template-columns: 180px 1fr;
-    align-items: center;
-    gap: var(--spacing-md);
-  }
+    margin-bottom: var(--spacing-lg);
 
-
-  fieldset p {
-    grid-template-columns: 1fr;
-  }
-
-  fieldset label {
-    text-align: left;
-  }
-
-  /* Tablas con desplazamiento horizontal en pantallas pequeñas */
-  table {
-    display: block;
-    overflow-x: auto;
   }
 }
 
+
+
 /* Tramo 3: Pantalla grande (1920px+) */
+
 @media screen and (min-width: 1920px) {
   :root {
     --font-size-h1: 4rem;
@@ -79,19 +77,20 @@
     grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
   }
 
-  /* Formularios alineados */
-  form {
-  max-width: 800px;
-  margin: var(--spacing-xl) 0;
   
+  form {
+  padding: var(--spacing-xxl);
   }
 
   form label {
     text-align: left;
     margin-bottom: var(--spacing-xl) var(--spacing-xl);
   }
-}
 
+  form p {
+    margin-bottom: var(--spacing-xxl);
+  }
+}
 
 /* Impresión */
 @media print {

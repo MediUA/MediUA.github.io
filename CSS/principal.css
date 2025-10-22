@@ -15,12 +15,11 @@ html {
 body {
     font-family: var(--font-family-base);
     font-weight: var(--font-weight-normal);
-    line-height: var(--line-height-base);
+    line-height: var(--line-height-base); /*Interlineado*/
     color: var(--color-text);
     background: var(--color-bg);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/ /*NO VEO EN QUÉ AFECTA ESTO*/
 }
 
 /* Tipografía */
