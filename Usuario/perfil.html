@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Perfil de usuario - MediUA</title>
     <link rel="stylesheet" href="../CSS/principal.css">
+    <script src="https://kit.fontawesome.com/39dc941603.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -50,7 +51,7 @@
             <label for="color_favorito">Color favorito:</label>
             <input type="color" id="color_favorito" name="color_favorito" value="#000000"><br>
             <label for="conocimietos">Nivel de conocimientos médicos (del 0 al 10):</label>
-            <input type="range" id="conocimietos" name="conocimietos" min="0" max="10" value="5" oninput="valorConocimientos.textContent = this.value"><br>
+            <input type="range" id="conocimietos" name="conocimietos" min="0" max="10" value="5" oninput="valorConocimientos.textContent = this.value">
             <span id="valorConocimientos">5</span>/10<br>
             <button type="submit">Crear perfil</button>
         </form>
@@ -58,9 +59,9 @@
     <footer>
         <p>&copy; 2025 MediUA. Todos los derechos reservados.</p>
         <address>
-            Escrito por: Pablo Sánchez Sos y Eva Soto Peral<br>
-            Correos: pss78@alu.ua.es y esp96@alu.ua.es<br>
-            Dirección: Carr. de San Vicente del Raspeig
+            <i class="fa-solid fa-pencil" aria-label="Lápiz" role="img"></i> Escrito por: Pablo Sánchez Sos y Eva Soto Peral<br>
+            <i class="fa-solid fa-envelope" aria-label="Correo" role="img"></i> Correo: pss78@alu.ua.es y esp96@alu.ua.es<br>
+            <i class="fa-solid fa-house" aria-label="Casa" role="img"></i> Dirección: Carr. de San Vicente del Raspeig
         </address>
         <nav aria-label="Navegación de regreso a página principal y mapa del sitio web">
             <ul>

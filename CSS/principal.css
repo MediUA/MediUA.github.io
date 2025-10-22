@@ -1,41 +1,39 @@
 /* Archivo principal - MediUA */
 
 /* Importar módulos CSS */
-@import url("variables_simple.css");
-@import url("base_simple.css");
-@import url("componentes_simple.css");
-@import url("forms_simple.css");
-@import url("responsive_simple.css");
+@import url("variables.css");
+@import url("base.css");
+@import url("componentes.css");
+@import url("forms.css");
+@import url("responsive.css");
 
-/* Utilidades de texto */
-.text-center { text-align: center; }
-.text-right { text-align: right; }
+html {
+    font-size: var(--font-size-base);
 
-/* Utilidades de margen */
-.mt-0 { margin-top: 0; }
-.mt-1 { margin-top: var(--spacing-sm); }
-.mt-2 { margin-top: var(--spacing-md); }
-.mt-3 { margin-top: var(--spacing-lg); }
+}
 
-.mb-0 { margin-bottom: 0; }
-.mb-1 { margin-bottom: var(--spacing-sm); }
-.mb-2 { margin-bottom: var(--spacing-md); }
-.mb-3 { margin-bottom: var(--spacing-lg); }
+body {
+    font-family: var(--font-family-base);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-base);
+    color: var(--color-text);
+    background: var(--color-bg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
-/* Utilidades de flexbox */
-.flex { display: flex; }
-.flex-column { flex-direction: column; }
-.flex-wrap { flex-wrap: wrap; }
-.justify-center { justify-content: center; }
-.justify-between { justify-content: space-between; }
-.align-center { align-items: center; }
-.gap-1 { gap: var(--spacing-sm); }
-.gap-2 { gap: var(--spacing-md); }
+/* Tipografía */
+h1, h2, h3, h4 {
+    font-family: var(--font-family-heading);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-heading);
+    margin-bottom: var(--spacing-md);
+}
 
-/* Utilidades de grid */
-.grid { display: grid; }
-.grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
-.grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+h1 { font-size: var(--font-size-h1); }
+h2 { font-size: var(--font-size-h2); margin-top: var(--spacing-xl); }
+h3 { font-size: var(--font-size-h3); margin-top: var(--spacing-lg); }
 
-/* Visibilidad */
-.hidden { display: none; }
+p { margin-bottom: var(--spacing-md); }
+

@@ -1,0 +1,76 @@
+/* Variables CSS para MediUA - Sistema de diseño modular */
+
+:root {
+  /* Colores principales*/
+  --color-primary: #004A80; /*9.11 contraste (fondo blanco)*/
+  --color-primary-dark: #00284D; /*14.88 contraste (fondo blanco)*/
+  --color-primary-light: #D7E7F9; /*7.04 contraste (texto color light)*/
+
+  --color-secondary: #1a3d28;
+
+  /* Colores de texto - Alto contraste */
+  --color-text: #1a1a1a;
+  --color-text-light: #4a4a4a;
+  --color-text-inverse: #ffffff;
+  --color-text-enlace-footer: #cdc6c6; /*7.16 contraste (color-secondary)*/
+
+  /* Colores de fondo */
+  --color-bg: #ffffff;
+  --color-bg-alt: #f5f5f5;
+  --color-bg-dark: #beb4b4;
+
+  /* Colores de estado */
+  --color-success: #2d7a3e;
+  --color-warning: #c77700;
+  --color-error: #c41e3a;
+  --color-info: #0066cc;
+
+  /* Colores de borde */
+  --color-border: #cccccc;
+  --color-border-light: #e0e0e0;
+  --color-border-dark: #999999;
+
+  /* Tipografía */
+  --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-family-heading: Georgia, "Times New Roman", serif;
+  --font-family-mono: "Courier New", Courier, monospace;
+
+  --font-size-base: 16px;
+  --font-size-small: 0.875rem;
+  --font-size-large: 1.125rem;
+  --font-size-h1: 2.5rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.5rem;
+  --font-size-h4: 1.25rem;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  --line-height-base: 1.6;
+  --line-height-heading: 1.3;
+
+  /* Espaciado */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-xxl: 3rem;
+
+  /* Bordes */
+  --border-width: 1px;
+  --border-width-thick: 3px;
+  --border-radius: 4px;
+  --border-radius-large: 8px;
+
+  /* Anchos máximos */
+  --max-width-content: 1200px;
+  --max-width-text: 65ch;
+
+  /* Puntos de ruptura (para referencia en media queries) */
+  --breakpoint-mobile: 480px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1024px;
+  --breakpoint-wide: 1920px;
+}
