@@ -153,6 +153,7 @@ nav[aria-label="Índice alfabético"] a { /* Formato de cada enlace */
   color: var(--color-white);
   font-weight: var(--font-weight-bold); /*Negrita*/
   border-radius: var(--border-radius); /*Redondea bordes*/
+  min-height: 45px;
   }
   
 nav[aria-label="Índice alfabético"] a:hover {
