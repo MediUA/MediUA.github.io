@@ -1,4 +1,4 @@
-/* Formularios - MediUA */
+
 
 form { /*Aspecto visual general*/
   background: var(--color-bg-alt);
@@ -19,11 +19,13 @@ label {
 }
 
 /* Inputs */
-input[type="text"],
+input[type="text"] /* Campos de texto. */,
 input[type="email"],
 input[type="password"],
-input[type="date"],
 input[type="number"],
+input[type="date"],
+input[type="radio"],
+input[type="checkbox"],
 textarea,
 select {
   width: 100%;
@@ -31,7 +33,7 @@ select {
   font-family: var(--font-family-base);
   font-size: var(--font-size-base);
   color: var(--color-text);
-  background: var(--color-bg);
+  background: var(--color-white);
   border: var(--border-width) solid var(--color-border);
   border-radius: var(--border-radius);
   box-sizing: border-box; /* Incluye el padding y el borde en el ancho total para que no se salga el input del recuadro gris */ 
@@ -40,13 +42,7 @@ select {
 
 
 /* FOCO */
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="date"]:focus,
-input[type="number"]:focus,
-input[type="color"]:focus,
-input[type="submit"]:focus,
+input:focus,
 textarea:focus,
 select:focus{
   outline: var(--border-width-thick) solid var(--color-primary);
@@ -93,10 +89,6 @@ fieldset p {
   margin-bottom: var(--spacing-sm);
 }
 
-fieldset p {
-  grid-template-columns: 1fr;
-}
-
 fieldset label {
   margin-bottom: 0;
   cursor: pointer;
@@ -108,13 +100,12 @@ fieldset label, form label {
 }
 
 /* Botones */
-button,
-input[type="submit"] {
+button, input[type="submit"] {
   padding: var(--spacing-sm) var(--spacing-lg);
   font-family: var(--font-family-base);
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-medium);
-  color: var(--color-text-inverse);
+  color: var(--color-white);
   background: var(--color-primary);
   border: none;
   border-radius: var(--border-radius);
@@ -123,10 +114,16 @@ input[type="submit"] {
   display: block;
   margin: var(--spacing-md) auto; /* Centrado horizontal */
   width: fit-content; /* Ajusta el ancho al contenido */
+  min-height: 45px;
 }
 
 button:hover,
 input[type="submit"]:hover {
   background: var(--color-primary-dark);
   transform: translateY(-1px); /*Mueve ligeramente*/
+}
+
+button:focus{
+  outline: var(--border-width-thick) solid var(--color-primary-dark);
+  outline-offset: 2px; /* separa el contorno del borde */
 }
