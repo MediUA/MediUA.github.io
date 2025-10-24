@@ -23,6 +23,7 @@ header h1 a:hover {
 /* Main */
 main {
   margin: 0 auto; /* Centra el contenido */
+  max-width: 75%;
 }
 
 
@@ -110,11 +111,10 @@ footer a:focus {
 
 .breadcrumbs {
   list-style: none;
-  display: inline-flex;
+  display: inline-flex; /* Hace que los elementos estén en línea */
   flex-wrap: nowrap;
   padding: 0;
   margin: 0;
-  align-items: baseline;
 }
 
 .breadcrumbs li {

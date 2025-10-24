@@ -34,5 +34,4 @@ h1 { font-size: var(--font-size-h1); }
 h2 { font-size: var(--font-size-h2); margin-top: var(--spacing-xl); }
 h3 { font-size: var(--font-size-h3); margin-top: var(--spacing-lg); }
 
-p { margin-bottom: var(--spacing-xl);
-}
+p { margin-bottom: var(--spacing-xl); }

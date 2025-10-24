@@ -18,7 +18,7 @@
   }
 
   nav[aria-label="Índice alfabético"] ul { /* Columnas flexibles según ancho */
-    grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(45px, 1fr)); 
   }
   
   form {

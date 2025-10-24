@@ -14,7 +14,7 @@ form p {
 
 label {
   font-weight: var(--font-weight-medium);
-  display: block;
+  display: block; 
   margin-bottom: var(--spacing-xs);
 }
 
@@ -24,8 +24,6 @@ input[type="email"],
 input[type="password"],
 input[type="number"],
 input[type="date"],
-input[type="radio"],
-input[type="checkbox"],
 textarea,
 select {
   width: 100%;
@@ -57,7 +55,7 @@ input:invalid, textarea:invalid{
 
 textarea { /*Cuadros de texto*/
   min-height: 120px; 
-  resize: vertical;
+  resize: vertical; /* Permite cambiar el tamaño verticalmente */
 }
 
 /* Fieldset */
@@ -110,7 +108,6 @@ button, input[type="submit"] {
   border: none;
   border-radius: var(--border-radius);
   cursor: pointer; /* Cambia el cursor al pasar por encima */
-  /* Centrar el botón */
   display: block;
   margin: var(--spacing-md) auto; /* Centrado horizontal */
   width: fit-content; /* Ajusta el ancho al contenido */
