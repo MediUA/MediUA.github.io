@@ -127,7 +127,7 @@
   a:after {
     content: " (" attr(href) ")"; /* Muestra la URL entre paréntesis después del enlace */
   }
-  span, .breadcrumb, nav, aside, .sr-only, h3 a, .indice, .decorativo, iframe, button {
+  span, .breadcrumb, nav, .breadcrumb-item, aside, .sr-only, h3 a, .indice, .decorativo, iframe, button {
     display: none;
   }
   img {
