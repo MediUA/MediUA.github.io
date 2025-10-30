@@ -16,3 +16,11 @@ aside p{
     background-image: url('../Imagenes/aparatos.png');
     background-size: contain;
 }
+.sr-only {
+    position: absolute;
+    left: -9999px;
+}
+
+.sr-only:focus {
+    position: static;
+}
