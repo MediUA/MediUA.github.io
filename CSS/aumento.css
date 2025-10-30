@@ -1,0 +1,30 @@
+/* Tamaño de letra aumentado */
+@import url("principal.css");
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+    :root{
+        --font-family-base: 'Atkinson Hyperlegible', sans-serif;
+        --font-family-heading: 'Atkinson Hyperlegible', sans-serif;
+        --line-height-base: 1.7;
+        --line-height-heading: 1.8;
+    }
+@media screen and (max-width: 480px) {
+    :root {
+        --font-size-base: 20px;
+    }
+}
+
+/*Tramo 2: pantalla mediana (481-1919 px)*/
+
+@media screen and (min-width: 481px) and (max-width: 1919px) {
+    :root {
+        --font-size-base: 24px;
+    }
+}
+
+/* Tramo 3: Pantalla grande (1920px+) */
+
+@media screen and (min-width: 1920px) {
+    :root {
+        --font-size-base: 30px;
+    }
+}

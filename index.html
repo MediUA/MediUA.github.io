@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>MediUA</title>
-    <link rel="stylesheet" href="CSS/principal.css"> <!--Para las migas de pan, con rel indico la relación a la página actual-->
+    <link rel="stylesheet" href="CSS/principal.css" title="claro"> <!--Para las migas de pan, con rel indico la relación a la página actual-->
+    <link rel="alternate stylesheet" href="CSS/oscuro.css" title="oscuro">
+    <link rel="alternate stylesheet" href="CSS/bajo_contraste.css" title="bajo contraste">
+    <link rel="alternate stylesheet" href="CSS/aumento.css" title="tamaño aumentado">
+    <link rel="alternate stylesheet" href="CSS/accesible.css" title="accesible">
     <script src="https://kit.fontawesome.com/39dc941603.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -22,7 +26,7 @@
         <h2>Bienvenido a a la página principal de MediUA</h2>
         <p>MediUA es una enciclopedia médica digital diseñada para ofrecer información clara, confiable y accesible sobre una amplia variedad de temas relacionados con la salud. Su objetivo principal es acercar el conocimiento médico tanto a profesionales como a estudiantes y público general, combinando rigor científico con un lenguaje comprensible.</p>
         <h3><a href="Buscador/buscador.html">Buscador de términos médicos</a></h3>
-        <h3>Índice alfabético:</h3>
+        <h3 class="indice">Índice alfabético:</h3>
         <nav aria-label="Índice alfabético">
             <ul>
                 <li><a href="A/indexa.html">A</a></li>
@@ -69,8 +73,8 @@
         </figure>
         <p>Un neumotórax es un <mark>colapso pulmonar</mark>. Un neumotórax se produce cuando el aire se filtra dentro del espacio que se encuentra entre los pulmones y la pared torácica. El aire hace presión en la parte externa del pulmón y causa el colapso. Un neumotórax puede ser un colapso pulmonar completo o un colapso de solo una parte del pulmón. <a href="https://www.mayoclinic.org/es/diseases-conditions/pneumothorax/symptoms-causes/syc-20350367">Seguir leyendo sobre el neumotórax</a></p>
         <h4>Constantes vitales</h4>
-        <figure>
-            <img src="Imagenes/aparatos.png" alt="">
+        <figure class="decorativo_css">
+            <img src="Imagenes/aparatos.png" alt="" class="decorativo">
         </figure>
         <p>En esta página encontrarás información sobre los rangos de las constantes vitales. <a href="Complementario/constantes.html">Ir a la tabla de constantes vitales</a></p>
     </section>

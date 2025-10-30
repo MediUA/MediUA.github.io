@@ -1,0 +1,17 @@
+/* Tema oscuro */
+@import url("principal.css");
+    :root{
+        --color-primary: #FFB57F;
+        --color-primary-dark: #FFD7B2;
+        --color-primary-light: #281806;
+        --color-secondary: #E5C2D7;
+        
+        --color-text: #ffffff;
+        --color-white: #000000;
+        --color-bg-alt: #0A0A0A;
+        
+        --color-error: #FF6F6C;
+        
+        --color-border: #333333;
+        --color-border-light: #1f1f1f1f;
+    }

@@ -96,15 +96,46 @@
   }
 }
 
-/* Impresión solo del contenido textual*/
+/* Impresión*/
 @media print {
-  span, .breadcrumb, footer, nav, aside {
+  @page {
+  size: A4; /* Tamaño del papel */
+  }
+  blockquote, table, tr, tbody, thead, th, td, img {
+    page-break-inside: avoid; /* Evita que los bloques se dividan entre páginas */
+  }
+  table {
+    display: table !important;
+    zoom: 70%;
+  }
+  *{
+    background: var(--color-white);
+    color: var(--color-text);
+    orphans: 4; /* Controla las líneas huérfanas al final de una página */
+    widows: 2; /* Controla las líneas viudas al comienzo de una página */
+  }
+  input:invalid, textarea:invalid{
+    border-color: var(--color-text);
+  }
+  body{
+    font-size: 12pt;
+  }
+  a{
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+  a:after {
+    content: " (" attr(href) ")"; /* Muestra la URL entre paréntesis después del enlace */
+  }
+  span, .breadcrumb, nav, aside, .sr-only, h3 a, .indice, .decorativo, iframe, button {
     display: none;
   }
-
-  body {
-    font-size: 12pt;
-    color: #000;
-    background: #fff;
+  img {
+    filter: grayscale(100%);
   }
+  nav[aria-label="Mapa del sitio web"]{
+    display: initial; /* Mostrar el mapa del sitio web en impresión (devolver a su valor por defecto) */
+  }
+  /* FORMULARIOS HAY QUE IMPRIMIRLOS???? */
+
 }

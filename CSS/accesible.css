@@ -1,0 +1,18 @@
+/*Accesible = alto contraste(original) + aumento*/
+@import url("principal.css");
+@import url("aumento.css");
+p {
+    max-width: 80ch;
+}
+aside p{
+    margin: 0 auto;
+}
+.decorativo {
+    display:none;
+}
+.decorativo_css{
+    width: 20vw; /* 20% de la ventana */
+    height: 20vw;
+    background-image: url('../Imagenes/aparatos.png');
+    background-size: contain;
+}
