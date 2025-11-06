@@ -14,7 +14,7 @@ aside p{
     width: 20vw; /* 20% de la ventana */
     height: 20vw;
     background-image: url('../Imagenes/aparatos.png');
-    background-size: contain;
+    background-size: contain; /*La imagen se ajusta completamente dentro*/
 }
 .sr-only {
     position: absolute;
