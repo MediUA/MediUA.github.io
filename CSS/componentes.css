@@ -227,7 +227,6 @@ img {
   height: auto;
   display: block;
   }
-
 /* Clase para solo lectores de pantalla */
 .sr-only {
   top:auto; /* Para que sea lo primero que detecte el lector */
