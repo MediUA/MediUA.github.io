@@ -227,6 +227,26 @@ img {
   height: auto;
   display: block;
   }
+
+#video-amara {
+  width: 560px;
+  height: 316px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+video{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+iframe{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 16 / 9;
+}
+
 /* Clase para solo lectores de pantalla */
 .sr-only {
   top:auto; /* Para que sea lo primero que detecte el lector */
