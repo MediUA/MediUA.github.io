@@ -30,15 +30,15 @@
             <p>Los campos marcados como (obligatorio) deben completarse.</p>
             <p>
             <label for="asunto">Asunto (obligatorio):</label>
-            <input type="text" id="asunto" name="asunto" autofocus required placeholder="Escriba el asunto aquí">
+            <input type="text" id="asunto" name="asunto" autofocus required placeholder="Escriba el asunto aquí" autocomplete="on">
             </p>
             <p>
             <label for="mensaje">Comentario o pregunta (obligatorio):</label>
-            <textarea id="mensaje" name="mensaje" required placeholder="Escriba el comentario o el mensaje aquí"></textarea>
+            <textarea id="mensaje" name="mensaje" required placeholder="Escriba el comentario o el mensaje aquí" autocomplete="on"></textarea>
             </p>
             <p>
             <label for="persona">Yo soy (profesión):</label>
-            <select name="persona" id="persona">
+            <select name="persona" id="persona" autocomplete="on">
                 <option value="paciente">Paciente</option>
                 <option value="cientifico">Científico</option>
                 <option value="medico">Médico</option>
@@ -49,7 +49,7 @@
             </p>
             <p>
             <label for="fecha">&#128197; Fecha (cuándo se ha rellenado el formulario):</label>
-            <input type="date" id="fecha" name="fecha">
+            <input type="date" id="fecha" name="fecha" autocomplete="on">
             </p>
             <fieldset>
             <legend>Sexo:</legend>
@@ -68,7 +68,7 @@
             </fieldset>
             <p>
             <label for="email">&#128231; Correo electrónico (Ejemplo: pss78@gmail.com):</label>
-            <input type="email" id="email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="pss78@gmail.com">
+            <input type="email" id="email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="pss78@gmail.com" autocomplete="on">
             </p>
             <p>
             <label for="mas_informacion">Marca la casilla para más información</label>
