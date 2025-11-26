@@ -175,12 +175,12 @@ nav[aria-label="Tabla de contenidos"] ul {
 /* Enlaces */
 a {
   color: var(--color-primary);
-  text-decoration: none;
+  text-decoration: underline;
   }
   
 a:hover {
   color: var(--color-primary-dark);
-  text-decoration: underline;
+  text-decoration: none;
   }
   
 a:focus {
