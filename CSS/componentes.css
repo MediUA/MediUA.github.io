@@ -257,3 +257,7 @@ iframe{
   border-radius: 0.25rem;
   width: 20rem;
 }
+
+address{
+  font-style: normal;
+}
